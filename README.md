@@ -1,30 +1,56 @@
-# React + TypeScript + Vite
+## Components:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### GenderSelector:
+- **Responsibility:** Provides a selection option for gender.
+- **Reusability:** Medium to high, depending on the need for gender selection in other parts of the application.
 
-Currently, two official plugins are available:
+### PasswordInput:
+- **Responsibility:** Renders an input field for password entry.
+- **Reusability:** High, as password input fields are commonly used in various forms throughout the application.
+## Folder Structure:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **components:**
+  - GenderSelector: Contains the component responsible for gender selection.
+  - PasswordInput: Contains the component responsible for password input.
+  - UsernameInput: Contains the component responsible for username input.
+  - UserForm: Contains the generic form component with formik integration.
 
-## Expanding the ESLint configuration
+- **containers:**
+  - SignUpForm: Contains the component for the basic sign-up form.
+  - SignUpFormExtended: Contains the component for the extended sign-up form with additional fields.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **App:** Contains the main component where Material-UI tabs are implemented for navigation between different forms.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+You can install the dependencies and set up the project using either npm or Yarn. It is recommended to use Yarn for consistency with the existing setup.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Using Yarn (recommended)
+
+To install with Yarn, run the following command:
+
+```yarn install```
+or 
+```npm i```
+
+### Running the Application
+
+To start the application in development mode with hot reloading, use:
+
+```yarn start```
+
+### Building the Application
+
+To build the application for production:
+
+```yarn build```
+
+### Running Tests
+
+To run the unit tests:
+
+```yarn test```
+
+## Viewing the Built Application
+
+If you want to view the built version of the application without running a development server, navigate to the dist folder after building and open the index.html file in your web browser
