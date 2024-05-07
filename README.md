@@ -29,7 +29,7 @@ You can install the dependencies and set up the project using either npm or Yarn
 
 To install with Yarn, run the following command:
 
-```yarn install```
+```yarn```
 or 
 ```npm i```
 
