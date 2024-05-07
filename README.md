@@ -37,19 +37,13 @@ or
 
 To start the application in development mode with hot reloading, use:
 
-```yarn start```
+```yarn dev```
 
 ### Building the Application
 
 To build the application for production:
 
 ```yarn build```
-
-### Running Tests
-
-To run the unit tests:
-
-```yarn test```
 
 ## Viewing the Built Application
 
