@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# odore-test
-Test work for Odore
-=======
 ## Components:
 
 ### GenderSelector:
@@ -58,4 +54,3 @@ To run the unit tests:
 ## Viewing the Built Application
 
 If you want to view the built version of the application without running a development server, navigate to the dist folder after building and open the index.html file in your web browser
->>>>>>> master
