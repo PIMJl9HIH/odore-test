@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+/* rewrite for all input margin bottom */
+.MuiTextField-root.MuiFormControl-root {
+  margin-bottom: 10px;
+}
+
+.MuiFormHelperText-root.MuiFormHelperText-contained {
+  color: red;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  background-color: #fff;
+}
